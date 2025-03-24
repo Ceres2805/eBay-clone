@@ -1,26 +1,26 @@
 // components/Categories.js
 const categories = [
-  { name: "Luxury", image: "/luxury.jpg" },
-  { name: "Sneakers", image: "/sneakers.webp" },
-  { name: "P&A", image: "/pa.webp" },
+  { name: "Luxury", image: "/luxury.png" },
+  { name: "Sneakers", image: "/sneakers.png" },
+  { name: "P&A", image: "/pa.png" },
   { name: "Refurbished", image: "/refurbished.png" },
-  { name: "Trading Cards", image: "/trading-cards.jpg" },
-  { name: "Pre-loved Luxury", image: "/pre-loved-luxury.webp" },
-  { name: "Toys", image: "/toys.jpg" },
+  { name: "Trading Cards", image: "/trading-cards.png" },
+  { name: "Pre-loved Luxury", image: "/pre-loved-luxury.png" },
+  { name: "Toys", image: "/toys.png" },
 ];
 
 export default function Categories() {
   return (
     <section className="p-10">
-      <h2 className="text-2xl font-bold mb-6 text-left ml-2">Explore Popular Categories</h2>
+      <h2 className="text-2xl font-bold mb-6 text-left ml-2 mt-3">Explore Popular Categories</h2>
       <div className="flex justify-around mb-12">
         {categories.map((category, index) => (
           <div key={index} className="flex flex-col items-center text-center p-2">
-            <div className="bg-[#f4f4f4] rounded-full h-38 w-38 flex items-center justify-center text-sm overflow-hidden">
+            <div className="bg-[#f4f4f4] rounded-full h-38.5 w-38.5 flex items-center justify-center text-sm overflow-hidden hover:bg-[#ebebeb]">
               <img
                 src={category.image}
                 alt={category.name}
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover p-4"
               />
             </div>
             <div className="mt-2">

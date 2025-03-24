@@ -2,7 +2,7 @@
 
 export default function LowerHeader() {
     return (
-      <header className="flex justify-center items-center py-2 px-10 bg-white text-sm">
+      <header className="flex justify-center items-center py-2.5 px-10 bg-white text-xs">
         <ul>
             {[
                 { label: "Explore (New!)" },
